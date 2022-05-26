@@ -45,7 +45,14 @@ if [ -e /usr/share/applications/autoXampp-Runner.desktop ]; then
 	echo	"APPLICATION-USR OK!"
 else
 	cd /opt/autoLinux/autoXampp/
-	sudo cp autoXampp-Runner.desktop /usr/share/applications/
+	sudo cp /opt/autoLinux/autoXampp/autoXampp-Runner.desktop /usr/share/applications/
+	sudo chmod a+x /usr/share/applications/autoXampp-Runner.desktop
+fi
+
+if [ -e /Área\de\Trabalho/autoXampp-Runner.desktop ]; then
+	echo "ATALHO OK!"
+else
+	sudo cp /usr/share/applications/autoXampp.desktop  ~/Área\de\Trabalho/
 fi
 
 if [ -e /opt/autoLinux/autoXampp/favicon.png ]; then
