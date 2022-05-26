@@ -2,6 +2,6 @@
 Version=0.1
 Type=Application
 Terminal=true
-Icon=/opt/autoLinux/autoXampp/*png
+Icon=/opt/autoLinux/autoXampp/
 Name=autoXampp-Runner
 Exec=/opt/autoLinux/autoXampp/autoXampp-Runner.sh
