@@ -48,5 +48,11 @@ else
 	sudo cp autoXampp-Runner.desktop /usr/share/applications/
 fi
 
+if [ -e /opt/autoLinux/autoXampp/favicon.png ]; then
+	echo "ICONE OK!"
+else
+	sudo wget -P /opt/autoLinux/autoXampp/ https://github.com/HenryGuidelli/autoLinux/raw/main/autoXampp/favicon.png
+fi
+
 cd //opt/
 sudo chmod 777 autoLinux/autoXampp/ -R
