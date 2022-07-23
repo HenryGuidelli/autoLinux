@@ -28,14 +28,15 @@ zenity --title "AutoXampp" --question --text "Realmente quer installar o Xampp?"
 
 ( echo "autoXampp Installer"
 
-sleep 0.8
+sleep 0.6
+
 echo 5
 
 if [ -e /opt/autoLinux/autoXampp ]; then
-	echo "PASTAS OK!"
+	echo 15 "PASTAS OK!"
 else
 	mkdir -p /opt/autoLinux/autoXampp
-	echo "PASTAS OK!"
+	echo 15 "PASTAS OK!"
 fi
 
 sleep 0.5
@@ -48,7 +49,7 @@ cd /opt/autoLinux/autoXampp/
 if [ -e /opt/autoLinux/autoXampp/xampp-linux-installer.run ]; then
 	echo 25 "INSTALLER OK!"
 else
-	sudo wget -O xampp-linux-installer.run https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-linux-x64-8.1.6-0-installer.run?from_af=true &> /dev/null
+	sudo wget -O xampp-linux-installer.run https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-linux-x64-8.1.6-0-installer.run?from_af=true
 	echo 25 "INSTALLER OK!"
 fi
 
@@ -71,7 +72,7 @@ sleep 0.5
 if [ -e /opt/autoLinux/autoXampp/autoXampp-Runner.sh ]; then
 	echo 45 "RUNNER OK!"
 else
-	sudo wget --convert-links -P /opt/autoLinux/autoXampp/ https://raw.githubusercontent.com/HenryGuidelli/autoLinux/main/autoXampp/autoXampp-Runner.sh &> /dev/null
+	sudo wget --convert-links -P /opt/autoLinux/autoXampp/ https://raw.githubusercontent.com/HenryGuidelli/autoLinux/main/autoXampp/autoXampp-Runner.sh
 	echo 45 "RUNNER OK!"
 fi
 
@@ -80,7 +81,7 @@ sleep 0.5
 if [ -e /opt/autoLinux/autoXampp/autoXampp-Runner.desktop ]; then
 	echo 55 "APPLICATION-OPT OK!"
 else
-	sudo wget --convert-links -P /opt/autoLinux/autoXampp/ https://raw.githubusercontent.com/HenryGuidelli/autoLinux/main/autoXampp/autoXampp-Runner.desktop &> /dev/null
+	sudo wget --convert-links -P /opt/autoLinux/autoXampp/ https://raw.githubusercontent.com/HenryGuidelli/autoLinux/main/autoXampp/autoXampp-Runner.desktop
 	echo 55 "APPLICATION-OPT OK!"
 fi
 
@@ -99,7 +100,7 @@ sleep 0.5
 if [ -e /opt/autoLinux/autoXampp/favicon.png ]; then
 	echo 75 "ICONE OK!"
 else
-	sudo wget -P /opt/autoLinux/autoXampp/ https://github.com/HenryGuidelli/autoLinux/raw/main/autoXampp/favicon.png &> /dev/null
+	sudo wget -P /opt/autoLinux/autoXampp/ https://github.com/HenryGuidelli/autoLinux/raw/main/autoXampp/favicon.png
 	echo 75 "ICONE OK!"
 fi
 
