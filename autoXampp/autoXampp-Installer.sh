@@ -16,7 +16,7 @@ cd /opt/autoLinux/autoXampp/
 if [ -e /opt/autoLinux/autoXampp/xampp-linux-installer.run ]; then
 	echo "INSTALLER OK!"
 else
-	sudo wget -O xampp-linux-installer.run https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-linux-x64-8.1.6-0-installer.run?from_af=true
+	sudo wget -O xampp-linux-installer.run https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.1.12/xampp-linux-x64-8.1.12-0-installer.run/download
 	echo "INSTALLER OK!"
 fi
 
