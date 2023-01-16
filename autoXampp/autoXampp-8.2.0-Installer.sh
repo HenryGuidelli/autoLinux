@@ -8,29 +8,25 @@ else
 	echo "PASTAS OK!"
 fi
 
-cd //opt/
-sudo chmod 777 autoLinux/autoXampp/ -R
-cd /opt/autoLinux/autoXampp/
-
+sudo chmod 777 /opt/autoLinux/autoXampp/ -R
 
 if [ -e /opt/autoLinux/autoXampp/xampp-linux-installer.run ]; then
 	echo "INSTALLER OK!"
 else
-	sudo wget -O xampp-linux-installer.run https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.0/xampp-linux-x64-8.2.0-0-installer.run
+	sudo wget -O xampp-linux-installer.run -P /opt/autoLinux/autoXampp/ https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.0/xampp-linux-x64-8.2.0-0-installer.run
 	echo "INSTALLER OK!"
 fi
 
-sudo chmod a+x xampp-linux-installer.run
+sudo chmod a+x /opt/autoLinux/autoXampp/xampp-linux-installer.run
 
 if [ -e /opt/lampp/ ]; then
 	echo "XAMPP OK!"
 else
-	sudo ./xampp-linux-installer.run
+	sudo ./opt/autoLinux/autoXampp/xampp-linux-installer.run
 	echo "XAMPP OK!"
 fi
 
-cd /opt/lampp/ 
-sudo chmod 777 htdocs -R 
+sudo chmod 777 /opt/lampp/htdocs -R 
 
 if [ -e /opt/autoLinux/autoXampp/autoXampp-Runner.sh ]; then
 	echo "RUNNER OK!"
@@ -61,6 +57,4 @@ else
 	echo "ICONE OK!"
 fi
 
-
-cd //opt/
-sudo chmod 777 autoLinux/autoXampp/ -R
+sudo chmod 777 /opt/autoLinux/autoXampp/ -R
