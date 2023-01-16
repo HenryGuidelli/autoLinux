@@ -1,4 +1,2 @@
 #!/bin/bash
-echo "autoXampp"
-cd /opt/lampp/
-sudo ./manager-linux-x64.run
+sudo ./opt/lampp/manager-linux-x64.run
