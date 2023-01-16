@@ -1,5 +1,5 @@
 #!/bin/bash
-clear
+clear && sudo su
 echo "autoXampp Installer"
 
 echo "Deseja iniciar a instalação? [Y/N]"
