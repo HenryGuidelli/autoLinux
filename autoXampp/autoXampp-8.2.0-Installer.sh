@@ -6,7 +6,7 @@ echo "Deseja iniciar a instalação? [Y/N]"
 
 read cond
 
-if [ $cond = "y" -o $cond = "Y"] ; then
+if [ $cond = "y" -o $cond = "Y" ]; then
 	echo "Iniciando Intalação!"
 else
 	exit
