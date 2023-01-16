@@ -24,7 +24,7 @@ sudo chmod a+x /opt/autoLinux/autoXampp/xampp-linux-installer.run
 if [ -e /opt/lampp/ ]; then
 	echo "XAMPP OK!"
 else
-	sudo ./opt/autoLinux/autoXampp/xampp-linux-installer.run
+	cd / && sudo ./opt/autoLinux/autoXampp/xampp-linux-installer.run
 	echo "XAMPP OK!"
 fi
 
