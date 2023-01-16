@@ -14,7 +14,8 @@ sudo chmod 777 /opt/autoLinux/autoXampp/ -R
 if [ -e /opt/autoLinux/autoXampp/xampp-linux-installer.run ]; then
 	echo "INSTALLER OK!"
 else
-	sudo wget -P /opt/autoLinux/autoXampp/ -O xampp-linux-installer.run https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.0/xampp-linux-x64-8.2.0-0-installer.run
+	sudo wget -P /opt/autoLinux/autoXampp/ https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.0/xampp-linux-x64-8.2.0-0-installer.run
+	sudo mv /opt/autoLinux/autoXampp/xampp-linux-x64-8.2.0-0-installer.run opt/autoLinux/autoXampp/xampp-linux-installer.run
 	echo "INSTALLER OK!"
 fi
 
