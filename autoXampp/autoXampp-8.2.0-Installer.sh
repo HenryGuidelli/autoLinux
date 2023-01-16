@@ -2,6 +2,16 @@
 clear
 echo "autoXampp Installer"
 
+echo "Deseja iniciar a instalação? [Y/N]"
+
+read cond
+
+if [cond == "y" -o "Y"]; then
+	echo "Iniciando Intalação!"
+else
+	^C
+fi
+
 if [ -e /opt/autoLinux/autoXampp ]; then
 	echo "PASTAS OK!"
 else
