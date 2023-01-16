@@ -6,10 +6,10 @@ echo "Deseja iniciar a instalação? [Y/N]"
 
 read cond
 
-if [cond == "y" -o "Y"]; then
+if [ $cond == "y" -o "Y"] ; then
 	echo "Iniciando Intalação!"
 else
-	^C
+	exit
 fi
 
 if [ -e /opt/autoLinux/autoXampp ]; then
