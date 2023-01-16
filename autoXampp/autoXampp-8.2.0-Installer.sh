@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "autoXampp Installer"
 
 if [ -e /opt/autoLinux/autoXampp ]; then
