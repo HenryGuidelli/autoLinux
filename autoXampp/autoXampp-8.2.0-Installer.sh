@@ -10,6 +10,7 @@ if [ $cond = "y" -o $cond = "Y" ]; then
 	clear
 	echo "Iniciando Intalação!\n"
 else
+	clear
 	exit
 fi
 
